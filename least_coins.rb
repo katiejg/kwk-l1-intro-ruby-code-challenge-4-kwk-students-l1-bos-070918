@@ -12,7 +12,7 @@ coins[:dimes] = cents % qv / 10
 puts coins
 dv = (cents % qv / 10)
 elsif (cents % (cents/25) / 10) % 5 <= 0
-coins[:nickels] = cents % dv / 5 
+coins[:nickels] = (cents % dv) / 5 
 puts coins
 nv = (cents % dv / 5)
 elsif (cents % (cents % (cents/25) / 10) / 5) % 1 <= 0
